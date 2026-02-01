@@ -7,6 +7,7 @@ const io = readline.createInterface({
     output: process.stdout
 });
 
+//  initialisation of input message string
 let inputMsg = [];
 
 //  Read random message from input file
@@ -20,6 +21,7 @@ try{
 //  Eliminate all seperators but spaces from the string
 inputMsg = inputMsg.replace(/[.,:;\n\r]/g, '');
 
+//  Input message is converted to an array seperated by space character
 const randomWordArray = inputMsg.split(' ');
 
 //  Recursive function to take user input until user chooses to close the program
